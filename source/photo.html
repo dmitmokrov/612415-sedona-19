@@ -6,66 +6,70 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona"></a>
-        <button type="button">Меню</button>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Форма отзыва</a></li>
-          <li><a href="#">HTML Academy</a></li>
-        </ul>
+      <nav class="main-nav">
+        <a class="logo-link main-nav__logo-link" href="index.html">
+          <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona">
+        </a>
+        <div class="menu">
+          <button class="menu__toggle" type="button">Меню</button>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">Главная</a></li>
+            <li><a class="menu__link" href="#">Фото и видео</a></li>
+            <li><a class="menu__link" href="#">Форма отзыва</a></li>
+            <li><a class="menu__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Sedona</h1>
-      <section>
-        <h2>Фото и видео</h2>
-        <p>Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
-        <ul>
+      <h1 class="hero-heading">Sedona</h1>
+      <section class="photo-video">
+        <h2 class="photo-video__title">Фото и видео</h2>
+        <p class="photo-video__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут Вам забыть о политике и экономике.</p>
+        <ul class="photo-album">
           <li>
-            <figure>
-              <img src="https://via.placeholder.com/280" alt="Шоссе в солнечном свете">
-              <figcaption>Неродные просторы</figcaption>
-              <p>Автор фото: <cite>Борис</cite></p>
-              <p><span class="visually-hidden">Лайки:</span>1350</p>
+            <figure class="photo">
+              <img src="https://via.placeholder.com/280" width="280" height="280" alt="Шоссе в солнечном свете">
+              <figcaption class="photo__title">Неродные просторы</figcaption>
+              <p class="photo__author">Автор фото: <cite>Борис</cite></p>
+              <p class="likes"><span class="visually-hidden">Лайки:</span>1350</p>
             </figure>
           </li>
           <li>
-            <figure>
-              <img src="https://via.placeholder.com/280" alt="Местные кактусы">
-              <figcaption>Местная растительность</figcaption>
-              <p>Автор фото: <cite>Сергей</cite></p>
-              <p><span class="visually-hidden">Лайки:</span>143</p>
+            <figure class="photo">
+              <img src="https://via.placeholder.com/280" width="280" height="280" alt="Местные кактусы">
+              <figcaption class="photo__title">Местная растительность</figcaption>
+              <p class="photo__author">Автор фото: <cite>Сергей</cite></p>
+              <p class="likes"><span class="visually-hidden">Лайки:</span>143</p>
             </figure>
           </li>
           <li>
-            <figure>
-              <img src="https://via.placeholder.com/280" alt="Серпантины в Седоне">
-              <figcaption>Дорога на север</figcaption>
-              <p>Автор фото: <cite>Петр</cite></p>
-              <p><span class="visually-hidden">Лайки:</span>96</p>
+            <figure class="photo">
+              <img src="https://via.placeholder.com/280" width="280" height="280" alt="Серпантины в Седоне">
+              <figcaption class="photo__title">Дорога на север</figcaption>
+              <p class="photo__author">Автор фото: <cite>Петр</cite></p>
+              <p class="likes"><span class="visually-hidden">Лайки:</span>96</p>
             </figure>
           </li>
           <li>
-            <figure>
-              <img src="https://via.placeholder.com/280" alt="Мост Дьявола в Седоне">
-              <figcaption>Мост Дьявола</figcaption>
-              <p>Автор фото: <cite>Антон</cite></p>
-              <p><span class="visually-hidden">Лайки:</span>254</p>
+            <figure class="photo">
+              <img src="https://via.placeholder.com/280" width="280" height="280" alt="Мост Дьявола в Седоне">
+              <figcaption class="photo__title">Мост Дьявола</figcaption>
+              <p class="photo__author">Автор фото: <cite>Антон</cite></p>
+              <p class="likes"><span class="visually-hidden">Лайки:</span>254</p>
             </figure>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">#VisitSedona</a>
-      <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+    <footer class="main-footer">
+      <a class="main-footer__hashtag" href="#">#VisitSedona</a>
+      <ul class="main-footer__social-list">
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p>
+      <p class="main-footer__info">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
       </p>
