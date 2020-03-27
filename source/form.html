@@ -6,28 +6,32 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"><img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona"></a>
-        <button type="button">Меню</button>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Форма отзыва</a></li>
-          <li><a href="#">HTML Academy</a></li>
-        </ul>
+      <nav class="main-nav">
+        <a class="logo-link main-nav__logo-link" href="index.html">
+          <img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona">
+        </a>
+        <div class="menu">
+          <button class="menu__toggle" type="button">Меню</button>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">Главная</a></li>
+            <li><a class="menu__link" href="#">Фото и видео</a></li>
+            <li><a class="menu__link" href="#">Форма отзыва</a></li>
+            <li><a class="menu__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Sedona</h1>
+      <h1 class="hero-heading">Sedona</h1>
     </main>
-    <footer>
-      <a href="#">#VisitSedona</a>
-      <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+    <footer class="main-footer">
+      <a class="main-footer__hashtag" href="#">#VisitSedona</a>
+      <ul class="main-footer__social-list">
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p>
+      <p class="main-footer__info">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
       </p>
