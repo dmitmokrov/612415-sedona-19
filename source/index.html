@@ -6,71 +6,85 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a><img src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona"></a>
-        <button type="button">Меню</button>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">Фото и видео</a></li>
-          <li><a href="#">Форма отзыва</a></li>
-          <li><a href="#">HTML Academy</a></li>
-        </ul>
+      <nav class="main-nav">
+        <a class="logo-link main-nav__logo-link">
+          <img class="logo-link__image" src="https://via.placeholder.com/102x83" width="102" height="83" alt="Логотип City of Sedona">
+        </a>
+        <div class="menu">
+          <button class="menu__toggle" type="button">Меню</button>
+          <ul class="menu__list">
+            <li><a class="menu__link" href="#">Главная</a></li>
+            <li><a class="menu__link" href="#">Фото и видео</a></li>
+            <li><a class="menu__link" href="#">Форма отзыва</a></li>
+            <li><a class="menu__link" href="#">HTML Academy</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
-      <h1>Sedona</h1>
-      <section>
+      <h1 class="hero-heading hero-heading--special">Sedona</h1>
+      <section class="features">
         <h2 class="visually-hidden">Причины к нам приехать</h2>
-        <b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
+        <b class="features__intro">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-        <ul>
+        <ul class="features__list">
           <li>
-            <h3>Настоящий городок</h3>
-            <p>Седона не аттракцион для туристов, там течет сво жизнь</p>
+            <div class="features__info features__info--special">
+              <h3 class="features__title">Настоящий городок</h3>
+              <p class="features__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img src="https://via.placeholder.com/320x260" width="320" height="260" alt="Магазинчик в Седоне">
-            <ul>
+            <ul class="features__sublist">
               <li>
-                <h4>Жилье</h4>
-                <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                <h4 class="features__subtitle features__subtitle--housing">Жилье</h4>
+                <p class="features__subdescription">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
               <li>
-                <h4>Сувениры</h4>
-                <p>Не только китайского, но и местного производства!</p>
+                <h4 class="features__subtitle features__subtitle--souvenirs">Сувениры</h4>
+                <p class="features__subdescription">Не только китайского, но и местного производства!</p>
               </li>
               <li>
-                <h4>Еда</h4>
-                <p>Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
+                <h4 class="features__subtitle features__subtitle--food">Еда</h4>
+                <p class="features__subdescription">Всегда заказывайте фирменный бургер, Вы не разочаруетесь!</p>
               </li>
             </ul>
           </li>
           <li>
-            <h3>Там есть Мост Дьявола</h3>
-            <p>Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+            <div class="features__info features__info--special">
+              <h3 class="features__title">Там есть Мост Дьявола</h3>
+              <p class="features__description">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+            </div>
             <img src="https://via.placeholder.com/320x260" width="320" height="260" alt="Мост Дьявола в Седоне">
           </li>
           <li>
-            <h3>Небольшая площадь</h3>
-            <p>Все интересные места находятся очень близко</p>
+            <div class="features__info">
+              <h3 class="features__title">Небольшая площадь</h3>
+              <p class="features__description">Все интересные места находятся очень близко</p>
+            </div>
           </li>
           <li>
-            <h3>Красивая дорога</h3>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <div class="features__info">
+              <h3 class="features__title">Красивая дорога</h3>
+              <p class="features__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
           </li>
           <li>
-            <h3>Мало туристов</h3>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
+            <div class="features__info">
+              <h3 class="features__title">Мало туристов</h3>
+              <p class="features__description">Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
-      <a href="#">#VisitSedona</a>
-      <ul>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Youtube</a></li>
+    <footer class="main-footer">
+      <a class="main-footer__hashtag" href="#">#VisitSedona</a>
+      <ul class="main-footer__social-list">
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Twitter</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Facebook</span></a></li>
+        <li><a class="main-footer__social-link" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p>
+      <p class="main-footer__info">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
       </p>
