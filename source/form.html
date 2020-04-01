@@ -21,6 +21,85 @@
     </header>
     <main>
       <h1 class="hero-heading">Sedona</h1>
+      <section class="contact-us">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <div class="intro">
+          <b class="intro__title">Оставьте свой отзыв</b>
+          <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru">
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Представьтесь:</legend>
+            <p class="fieldset__row">
+              <label class="form__label form__label--text" for="user-name">Имя*:</label>
+              <input class="form__input" id="user-name" type="text" placeholder="Петр" required>
+            </p>
+            <p class="fieldset__row">
+              <label class="form__label form__label--text" for="user-surname">Фамилия*:</label>
+              <input class="form__input" id="user-surname" type="text" placeholder="Иванов" required>
+            </p>
+            <p class="fieldset__row">
+              <label class="form__label form__label--text" for="user-patronymic">Отчество:</label>
+              <input class="form__input" id="user-patronymic" type="text" placeholder="Александрович">
+            </p>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Контактная информация:</legend>
+            <p class="fieldset__column">
+              <label class="form__label form__label--text" for="user-tel">Контактный телефон*:</label>
+              <input class="form__input form__input--icon form__input--tel" id="user-tel" type="tel" placeholder="Введите телефон" required>
+            </p>
+            <p class="fieldset__column">
+              <label class="form__label form__label--text" for="user-email">Электронная почта*:</label>
+              <input class="form__input form__input--icon form__input--email" id="user-email" type="email" placeholder="Введите e-mail" required>
+            </p>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Ваше общее впечатление:</legend>
+            <p class="fieldset__row">
+              <input class="form__radio" id="feeling-positive" type="radio" name="feeling" value="positive" checked>
+              <label class="form__label form__label--radio" for="feeling-positive">Скорее положительное</label>
+            </p>
+            <p class="fieldset__row">
+              <input class="form__radio" id="feeling-negative" type="radio" name="feeling" value="negative">
+              <label class="form__label form__label--radio" for="feeling-negative">Скорее отрицательное</label>
+            </p>
+            <p class="fieldset__row">
+              <input class="form__radio" id="feeling-difficult-to-answer" type="radio" name="feeling" value="difficult-to-answer">
+              <label class="form__label form__label--radio" for="feeling-difficult-to-answer">Затрудняюсь ответить</label>
+            </p>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+            <p class="fieldset__row">
+              <input class="form__checkbox" id="devil's-bridge" type="checkbox" name="devil's bridge" checked>
+              <label class="form__label form__label--checkbox" for="devil's-bridge">Мост Дьявола</label>
+            </p>
+            <p class="fieldset__row">
+              <input class="form__checkbox" id="bell-mountain" type="checkbox" name="bell mountain" checked>
+              <label class="form__label form__label--checkbox" for="bell-mountain">Гора-колокол</label>
+            </p>
+            <p class="fieldset__row">
+              <input class="form__checkbox" id="slide-park" type="checkbox" name="slide park" checked>
+              <label class="form__label form__label--checkbox" for="slide-park">Слайд-парк</label>
+            </p>
+            <p class="fieldset__row">
+              <input class="form__checkbox" id="red-rocks" type="checkbox" name="red rocks">
+              <label class="form__label form__label--checkbox" for="red-rocks">Красные скалы</label>
+            </p>
+          </fieldset>
+
+          <p class="form__wrapper">
+            <label class="form__label form__label--textarea" for="user-emotions">Опишите свои эмоции:</label>
+            <textarea class="form__textarea" id="user-emotions">Опишите подробно все свои восторги</textarea>
+          </p>
+
+          <button class="button" type="submit">Отправить отзыв</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <a class="footer__hashtag" href="#">#VisitSedona</a>
@@ -29,7 +108,7 @@
         <li><a class="social__link" href="#"><span class="visually-hidden">Facebook</span></a></li>
         <li><a class="social__link" href="#"><span class="visually-hidden">Youtube</span></a></li>
       </ul>
-      <p class="main-footer__info">
+      <p class="footer__info">
         Разработано
         <a href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><img src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy"></a>
       </p>
