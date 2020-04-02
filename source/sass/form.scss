@@ -1,0 +1,92 @@
+.form {
+  background-color: $secondary;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 26px;
+  
+  color: $main;
+
+  &--text {
+    text-transform: uppercase;
+    color: $minor;
+  }
+
+  &--radio {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &--checkbox {
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  &--textarea {
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+}
+
+.form__input {
+  padding: 16px 20px;
+  border: none;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  color: $main;
+  background-color: $input-bg;
+
+  &::placeholder {
+    color: $main;
+  }
+
+  &--icon {
+    padding-right: 78px;
+    background-repeat: no-repeat;
+    background-position: right 20px center, right center;
+  }
+
+  &--tel {
+    background-image: 
+      url("../img/icon-phone.svg"),
+      linear-gradient(to left, $input-icon-bg 58px, $input-bg 0);
+    background-size: 18px, 100%;
+  }
+
+  &--email {
+    background-image: 
+      url("../img/icon-mail.svg"),
+      linear-gradient(to left, $input-icon-bg 58px, $input-bg 0);;
+    background-size: 16px, 100%;
+  }
+}
+
+.form__radio {
+
+}
+
+.form__checkbox {
+
+}
+
+.form__wrapper {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.form__textarea {
+  display: block;
+  padding: 20px;
+  border: none;
+
+  font: inherit;
+
+  background-color: $input-bg;
+}

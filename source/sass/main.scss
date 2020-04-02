@@ -1,0 +1,21 @@
+.main {
+  padding-top: 389px;
+
+  background-color: $secondary;
+  background-image:
+    url("../img/text-sedona.svg"),
+    url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 52px, 0;
+  background-size: 229px 39px, auto 389px;
+
+  &--special {
+    background-image:
+      url("../img/text-sedona-index.svg"),
+      url("../img/bg-back-mobile@1x.jpg");
+    background-position-y: 90px, 0;
+    background-size: 281px 214px, auto 389px;
+  }
+}
+
