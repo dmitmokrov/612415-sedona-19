@@ -1,0 +1,21 @@
+.intro {
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $main;
+  background-color: $secondary;
+}
+
+.intro__title {
+  font-weight: bold;
+  font-size: 18px;
+
+  &--big {
+    font-size: 21px;
+  }
+}
+
+.intro__text {
+  font-size: 14px;
+}

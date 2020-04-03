@@ -1,0 +1,24 @@
+.footer {
+  color: $main;
+  background-color: $secondary;
+}
+
+.footer__hashtag {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $main;
+}
+
+// .footer__social {
+
+// }
+
+.footer__info {
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
