@@ -1,6 +1,6 @@
-.main-nav {
+// .main-nav {
 
-}
+// }
 
 .main-nav__toggle {
   width: 23px;
@@ -31,5 +31,7 @@
   background-color: $primary;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 0px 1px 0 0 rgba(1, 1, 1, 0.2), inset 0px 1px 0 0 rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 1px 0 0 rgba(1, 1, 1, 0.2),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
 }

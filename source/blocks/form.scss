@@ -5,7 +5,7 @@
 .form__label {
   font-size: 14px;
   line-height: 26px;
-  
+
   color: $main;
 
   &--text {
@@ -53,27 +53,27 @@
   }
 
   &--tel {
-    background-image: 
+    background-image:
       url("../img/icon-phone.svg"),
       linear-gradient(to left, $input-icon-bg 58px, $input-bg 0);
     background-size: 18px, 100%;
   }
 
   &--email {
-    background-image: 
+    background-image:
       url("../img/icon-mail.svg"),
-      linear-gradient(to left, $input-icon-bg 58px, $input-bg 0);;
+      linear-gradient(to left, $input-icon-bg 58px, $input-bg 0);
     background-size: 16px, 100%;
   }
 }
 
-.form__radio {
+// .form__radio {
 
-}
+// }
 
-.form__checkbox {
+// .form__checkbox {
 
-}
+// }
 
 .form__wrapper {
   font-weight: bold;

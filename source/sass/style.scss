@@ -2,21 +2,19 @@
 @import "variables.scss";
 @import "utility.scss";
 @import "global.scss";
-@import "page-header.scss";
-@import "logo.scss";
-@import "main-nav.scss";
-@import "main.scss";
-@import "features.scss";
-@import "intro.scss";
-@import "button.scss";
-@import "location.scss";
-@import "social.scss";
-@import "photo-video.scss";
-@import "photo.scss";
-@import "likes.scss";
-@import "video.scss";
-@import "form.scss";
-@import "fieldset.scss";
-@import "footer.scss";
-
-
+@import "../blocks/page-header.scss";
+@import "../blocks/logo.scss";
+@import "../blocks/main-nav.scss";
+@import "../blocks/main.scss";
+@import "../blocks/features.scss";
+@import "../blocks/intro.scss";
+@import "../blocks/button.scss";
+@import "../blocks/location.scss";
+@import "../blocks/social.scss";
+@import "../blocks/photo-video.scss";
+@import "../blocks/photo.scss";
+@import "../blocks/likes.scss";
+@import "../blocks/video.scss";
+@import "../blocks/form.scss";
+@import "../blocks/fieldset.scss";
+@import "../blocks/footer.scss";
