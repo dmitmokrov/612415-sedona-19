@@ -103,7 +103,7 @@
 
 .form__checkbox {
   &:checked + .form__label--checkbox::before {
-    background-image: url("../../img/icon-tick.svg");
+    background-image: url("../img/icon-tick.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 24px 16px;
