@@ -14,13 +14,41 @@
   }
 
   &--radio {
+    position: relative;
+    padding-left: 72px;
+
     font-weight: bold;
     font-size: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $input-bg;
+      border: 15px solid $input-bg;
+    }
   }
 
   &--checkbox {
+    position: relative;
+    padding-left: 72px;
+
     font-weight: bold;
     font-size: 18px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 46px;
+      height: 46px;
+      background-color: $input-bg;
+    }
   }
 
   &--textarea {
@@ -67,13 +95,20 @@
   }
 }
 
-// .form__radio {
+.form__radio {
+  &:checked + .form__label--radio::before {
+    background-color: $minor;
+  }
+}
 
-// }
-
-// .form__checkbox {
-
-// }
+.form__checkbox {
+  &:checked + .form__label--checkbox::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 24px 16px;
+  }
+}
 
 .form__wrapper {
   font-weight: bold;
@@ -83,6 +118,8 @@
 
 .form__textarea {
   display: block;
+  width: 280px;
+  height: 160px;
   padding: 20px;
   border: none;
 
