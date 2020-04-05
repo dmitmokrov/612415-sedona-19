@@ -1,10 +1,29 @@
 .page-header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 56px;
+  margin-top: 220px;
+  padding: 0 20px;
+
   background-color: $secondary;
 }
 
-// .page-header__logo {
+@media (min-width: $tablet) {
+  .page-header {
+    margin-top: 0;
+    padding: 0;
+  }
+}
 
-// }
+.page-header__logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -51px;
+  z-index: 1;
+}
 
 // .page-header__nav {
 
