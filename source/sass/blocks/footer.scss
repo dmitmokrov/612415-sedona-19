@@ -1,6 +1,20 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  padding-bottom: 20px;
+
   color: $main;
   background-color: $secondary;
+}
+
+@media (min-width: $tablet) {
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 36px 60px;
+  }
 }
 
 .footer__hashtag {
@@ -13,12 +27,26 @@
   color: $main;
 }
 
-// .footer__social {
+.footer__social {
+  margin: 40px 0;
+}
 
-// }
+@media (min-width: $tablet) {
+  .footer__social {
+    margin: 0;
+  }
+}
 
 .footer__info {
+  display: flex;
+  align-items: center;
+  margin: 0;
+
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.footer__academy-link {
+  margin-left: 10px;
 }

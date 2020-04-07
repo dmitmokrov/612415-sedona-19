@@ -1,10 +1,22 @@
 .intro {
+  padding: 40px 26px 10px;
+
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
 
   color: $main;
   background-color: $secondary;
+
+  &--big {
+    padding: 30px 26px 50px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro {
+    padding: 50px 138px;
+  }
 }
 
 .intro__title {
@@ -16,6 +28,28 @@
   }
 }
 
+@media (min-width: $tablet) {
+  .intro__title {
+    font-size: 21px;
+
+    &--big {
+      font-size: 30px;
+    }
+  }
+}
+
 .intro__text {
+  margin-bottom: 0;
+
   font-size: 14px;
+}
+
+.intro__button {
+  margin-top: 40px;
+}
+
+@media (min-width: $tablet) {
+  .intro__button {
+    max-width: 458px;
+  }
 }

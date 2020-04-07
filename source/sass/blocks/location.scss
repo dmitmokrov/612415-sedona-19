@@ -5,3 +5,16 @@
 .location__map {
   border: none;
 }
+
+@media (min-width: $tablet) {
+  .location__map {
+    width: $tablet;
+    height: 350px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .location__map {
+    width: $desktop;
+  }
+}
