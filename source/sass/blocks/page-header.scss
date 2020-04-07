@@ -1,10 +1,27 @@
 .page-header {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  min-height: 56px;
+
   background-color: $secondary;
 }
 
-// .page-header__logo {
+.page-header__logo {
+  position: absolute;
+  bottom: -28px;
+  left: 50%;
+  margin-left: -51px;
+  z-index: 1;
+}
 
-// }
+@media (min-width: $tablet) {
+  .page-header__logo {
+    bottom: auto;
+    top: 0;
+  }
+}
 
 // .page-header__nav {
 

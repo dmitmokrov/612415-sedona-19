@@ -1,20 +1,70 @@
 .main {
-  padding-top: 389px;
+  padding-top: 158px;
 
   background-color: $secondary;
   background-image:
     url("../img/text-sedona.svg"),
+    url("../img/bg-intro-triangle-mobile.svg"),
     url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 52px, 0;
-  background-size: 229px 39px, auto 389px;
+  background-position-y: 52px, 132px, -231px;
+  background-size: 230px, 326px, auto 389px;
 
   &--special {
+    padding-top: 389px;
+
     background-image:
       url("../img/text-sedona-index.svg"),
+      url("../img/bg-intro-triangle-mobile.svg"),
       url("../img/bg-back-mobile@1x.jpg");
-    background-position-y: 90px, 0;
-    background-size: 281px 214px, auto 389px;
+    background-position-y: 90px, 363px, 0;
+    background-size: 281px, 326px, auto 389px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .main {
+    padding-top: 290px;
+
+    background-image:
+      url("../img/text-sedona.svg"),
+      url("../img/bg-intro-triangle-tablet.svg"),
+      url("../img/bg-back-tablet@1x.jpg");
+    background-position-y: 94px, 233px, -228px;
+    background-size: 460px, 768px, 768px;
+
+    &--special {
+      padding-top: 518px;
+
+      background-image:
+        url("../img/text-sedona-index.svg"),
+        url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@1x.jpg");
+      background-position-y: 78px, 461px, 0;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .main {
+    padding-top: 300px;
+
+    background-image:
+      url("../img/text-sedona.svg"),
+      url("../../img/bg-intro-triangle-desktop.svg"),
+      url("../img/bg-back-desktop@1x.jpg");
+    background-position-y: 100px, 243px, -218px;
+    background-size: 460px, 1200px, 1200px;
+
+    &--special {
+      padding-top: 518px;
+
+      background-image:
+        url("../img/text-sedona-index.svg"),
+        url("../../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@1x.jpg");
+      background-position-y: 78px, 461px, 0;
+    }
   }
 }
