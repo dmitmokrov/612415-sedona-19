@@ -1,18 +1,123 @@
 .fieldset {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 30px;
   border: none;
+}
+
+@media (min-width: $tablet) {
+  .fieldset {
+    width: 50%;
+
+    &--full-width {
+      width: 100%;
+    }
+  }
 }
 
 .fieldset__legend {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: #eeeeee;
+  }
+}
+
+@media (min-width: $tablet) {
+  .fieldset__legend {
+    font-size: 21px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .fieldset__sights-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (min-width: $desktop) {
+  .fieldset__contacts-wrapper {
+    display: flex;
+  }
+
+  .fieldset__sights-wrapper {
+    justify-content: space-between;
+  }
 }
 
 .fieldset__row {
-  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  min-height: 58px;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--contact {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
-// .fieldset__column {
+@media (min-width: $tablet) {
+  .fieldset__row {
+    &--sights {
+      width: 260px;
+    }
+  }
+}
 
-// }
+@media (min-width: $desktop) {
+  .fieldset__row {
+
+    &--contact {
+      flex-direction: row;
+      align-items: center;
+      width: 50%;
+    }
+
+    &--sights {
+      width: auto;
+    }
+  }
+}
+
+.fieldset__label {
+  margin-right: 13px;
+}
+
+.fieldset__input {
+  flex-grow: 1;
+}
+
+.fieldset__column {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: $tablet) {
+  .fieldset__column {
+    flex-direction: row;
+  }
+}
