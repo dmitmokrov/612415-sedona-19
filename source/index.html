@@ -10,21 +10,21 @@
   <body>
     <header class="page-header container">
       <a class="logo page-header__logo">
-        <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип City of Sedona">
+        <img src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип City of Sedona">
       </a>
-      <nav class="main-nav page-header__nav">
+      <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--right" type="button"><span class="visually-hidden">Меню</span></button>
         <ul class="main-nav__list">
           <li>
             <ul class="main-nav__sublist">
-              <li><a class="main-nav__link">Главная</a></li>
+              <li><a class="main-nav__link main-nav__link--first">Главная</a></li>
               <li><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
             </ul>
           </li>
           <li>
             <ul class="main-nav__sublist">
               <li><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
-              <li><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+              <li><a class="main-nav__link main-nav__link--last" href="https://htmlacademy.ru">HTML Academy</a></li>
             </ul>
           </li>
         </ul>
@@ -34,9 +34,9 @@
       <h1 class="visually-hidden">Sedona</h1>
       <section class="features">
         <h2 class="visually-hidden">Причины к нам приехать</h2>
-        <div class="intro">
-          <b class="intro__title">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-          <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="intro features__intro">
+          <b class="intro__title">Седона — небольшой <br>городок в Аризоне, <br>заслуживающий большего!</b><br>
+          <p class="intro__text">Рассмотрим 5 причин, по которым <br>Седона круче, чем гранд каньон!</p>
         </div>
         <ul class="features__list">
           <li class="features__item features__item--full-width">
@@ -74,28 +74,28 @@
           <li class="features__item features__item--equal-height">
             <div class="features__info features__info--with-separator">
               <h3 class="features__title">Небольшая площадь</h3>
-              <p class="features__description" data-number="— №3 —">Все интересные места находятся очень близко</p>
+              <p class="features__description" data-number="— №3 —">Все интересные места находятся <br>очень близко</p>
             </div>
           </li>
           <li class="features__item features__item--equal-height">
             <div class="features__info features__info--with-separator">
               <h3 class="features__title">Красивая дорога</h3>
-              <p class="features__description" data-number="— №4 —">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="features__description" data-number="— №4 —">Ехать в Седону из Лас-Вегаса <br>совсем не скучно!</p>
             </div>
           </li>
           <li class="features__item features__item--equal-height">
             <div class="features__info">
               <h3 class="features__title">Мало туристов</h3>
-              <p class="features__description" data-number="— №5 —">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="features__description" data-number="— №5 —">Большинство едет в Гранд Каньон <br>и толпится там</p>
             </div>
           </li>
         </ul>
       </section>
-      <section class="intro intro--big">
+      <section class="search-hotel">
         <h2 class="visually-hidden">Поиск гостиницы</h2>
-        <b class="intro__title intro__title--big">Заинтересовались?</b>
-        <p class="intro__text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button intro__button" href="search-hotel.html">Найти гостиницу</a>
+        <b class="search-hotel__title">Заинтересовались?</b>
+        <p class="search-hotel__text">Укажите предполагаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
+        <a class="button" href="search-hotel.html">Найти гостиницу</a>
       </section>
       <section class="location">
         <h2 class="visually-hidden">Как до нас добраться</h2>

@@ -2,6 +2,10 @@
 
 // }
 
+.features__intro {
+  margin-bottom: 5px;
+}
+
 .features__list {
   margin: 0;
   padding: 0;
@@ -47,7 +51,10 @@
 }
 
 .features__info {
-  padding: 30px 36px;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
 
   text-align: center;
   text-transform: uppercase;
@@ -56,13 +63,14 @@
   background-color: #eeeeee;
 
   &--special {
-    padding: 45px 27px 30px;
+    padding-top: 38px;
+    padding-bottom: 40px;
     color: $secondary;
     background-color: $primary;
   }
 
   &--decorative {
-    padding-top: 70px;
+    padding-top: 77px;
 
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -111,7 +119,7 @@
 
 .features__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
   font-weight: bold;
   font-size: 18px;
@@ -126,7 +134,7 @@
 
 .features__description {
   position: relative;
-  margin-bottom: 0;
+  margin: 0;
 
   font-size: 14px;
   line-height: 21px;
@@ -135,14 +143,14 @@
     content: attr(data-number);
     position: absolute;
     left: 50%;
-    top: -30px;
+    top: -37px;
     transform: translateX(-50%);
   }
 }
 
 .features__sublist {
   margin: 0;
-  padding: 40px;
+  padding: 35px;
   padding-bottom: 10px;
   padding-left: 70px;
 
@@ -185,7 +193,7 @@
 .features__subtitle {
   position: relative;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   font-weight: bold;
   font-size: 18px;
@@ -194,14 +202,14 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   &--housing {
     &::before {
-      left: -47px;
+      left: -48px;
+      bottom: -1px;
       width: 37px;
       height: 36px;
 
@@ -212,6 +220,7 @@
   &--souvenirs {
     &::before {
       left: -45px;
+      bottom: -1px;
       width: 32px;
       height: 38px;
 
@@ -221,7 +230,8 @@
 
   &--food {
     &::before {
-      left: -50px;
+        left: -51px;
+      bottom: -4px;
       width: 38px;
       height: 35px;
 
@@ -267,7 +277,7 @@
 
 .features__subdescription {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 14px;
   line-height: 21px;
