@@ -32,3 +32,33 @@ input[type="radio"].visually-hidden {
     width: $desktop;
   }
 }
+
+.d-mobile {
+  display: inline;
+}
+
+@media (min-width: $tablet) {
+  .d-mobile {
+    display: none;
+  }
+}
+
+.d-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop - 1) {
+  .d-tablet {
+    display: inline;
+  }
+}
+
+.d-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .d-desktop {
+    display: inline;
+  }
+}
