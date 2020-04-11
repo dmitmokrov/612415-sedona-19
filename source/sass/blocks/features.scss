@@ -107,6 +107,7 @@
     padding-top: 45px;
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 45px;
 
     &--special {
       padding-top: 44px;
@@ -129,9 +130,11 @@
     width: 400px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 66px;
 
     &--special {
-      padding-top: 51px;
+      padding-top: 53px;
+      padding-bottom: 40px;
     }
   }
 }
