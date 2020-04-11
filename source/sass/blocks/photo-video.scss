@@ -2,12 +2,34 @@
 
 // }
 
+.photo-video__intro {
+  padding-top: 38px;
+}
+
+@media (min-width: $tablet) {
+  .photo-video__intro {
+    margin-bottom: 20px;
+    padding-top: 74px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .photo-video__intro {
+    padding-top: 113px;
+  }
+}
+
+.photo-video__intro-text {
+  line-height: 24px;
+}
+
 .photo-video__list {
   display: flex;
   flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 27px;
 }
 
 @media (min-width: $tablet) {
@@ -27,7 +49,10 @@
 }
 
 .photo-video__item {
-  padding: 20px;
+  padding-top: 22px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 16px;
   border-top: 1px solid #eeeeee;
 }
 

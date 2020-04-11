@@ -8,6 +8,12 @@
 
   background-image: url("../img/icon-like.svg");
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: left top -2px;
   background-size: 23px 21px;
+}
+
+@media (min-width: $tablet) {
+  .likes {
+    padding-left: 33px;
+  }
 }
