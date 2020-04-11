@@ -27,6 +27,13 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .intro {
+    padding-left: 355px;
+    padding-right: 355px;
+  }
+}
+
 .intro__title {
   font-weight: bold;
   font-size: 18px;

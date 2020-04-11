@@ -22,3 +22,9 @@
     top: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header__logo {
+    margin-left: -95px;
+  }
+}

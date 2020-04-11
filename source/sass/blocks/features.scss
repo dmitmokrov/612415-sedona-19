@@ -127,6 +127,12 @@
 @media (min-width: $desktop) {
   .features__info {
     width: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    &--special {
+      padding-top: 51px;
+    }
   }
 }
 
@@ -207,6 +213,12 @@
   }
 }
 
+@media (min-width: $desktop) {
+  .features__sublist {
+    padding-bottom: 24px;
+  }
+}
+
 @media (min-width: $tablet) {
   .features__subitem {
     display: flex;
@@ -229,6 +241,8 @@
 @media (min-width: $desktop) {
   .features__subitem {
     width: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 

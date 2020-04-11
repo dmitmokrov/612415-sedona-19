@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <div class="container">
+    <header class="page-header">
       <a class="logo page-header__logo">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
@@ -34,7 +35,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main main--special container">
+    <main class="main main--special">
       <h1 class="visually-hidden">Sedona</h1>
       <section class="features">
         <h2 class="visually-hidden">Причины к нам приехать</h2>
@@ -46,8 +47,8 @@
           <li class="features__item features__item--full-width">
             <div class="features__wrapper">
               <div class="features__info features__info--special features__info--decorative">
-                <h3 class="features__title">Настоящий городок</h3>
-                <p class="features__description" data-number="— №1 —">Седона не аттракцион для туристов, там <br class="d-tablet">течет своя жизнь</p>
+                <h3 class="features__title">Настоящий <br class="d-desktop">городок</h3>
+                <p class="features__description" data-number="— №1 —">Седона не аттракцион для туристов, <br class="d-desktop">там <br class="d-tablet-only">течет своя жизнь</p>
               </div>
               <img class="features__img"
                 srcset="
@@ -63,11 +64,11 @@
             <ul class="features__sublist">
               <li class="features__subitem">
                 <h4 class="features__subtitle features__subtitle--housing">Жилье</h4>
-                <p class="features__subdescription">Рекомендуем пожить <br class="d-tablet">в настоящем мотеле, все как в кино!</p>
+                <p class="features__subdescription">Рекомендуем пожить <br class="d-tablet-only">в настоящем мотеле, все как в кино!</p>
               </li>
               <li class="features__subitem features__subitem--last">
                 <h4 class="features__subtitle features__subtitle--souvenirs">Сувениры</h4>
-                <p class="features__subdescription">Не только китайского, но и местного производства!</p>
+                <p class="features__subdescription">Не только китайского, <br class="d-desktop">но и местного производства!</p>
               </li>
               <li class="features__subitem">
                 <h4 class="features__subtitle features__subtitle--food">Еда</h4>
@@ -79,7 +80,7 @@
             <div class="features__wrapper features__wrapper--text-right">
               <div class="features__info features__info--special">
                 <h3 class="features__title" >Там есть <br class="d-tablet">Мост Дьявола</h3>
-                <p class="features__description" data-number="— №2 —">Да, по нему можно пройти! Если Вы осмелитесь, конечно</p>
+                <p class="features__description" data-number="— №2 —">Да, по нему можно пройти! <br class="d-desktop">Если Вы осмелитесь, конечно</p>
               </div>
               <img class="features__img"
                 srcset="
@@ -95,14 +96,14 @@
           </li>
           <li class="features__item features__item--equal-height">
             <div class="features__info features__info--with-separator">
-              <h3 class="features__title">Небольшая площадь</h3>
-              <p class="features__description" data-number="— №3 —">Все интересные места <br class="d-tablet">находятся очень близко</p>
+              <h3 class="features__title">Небольшая <br class="d-desktop">площадь</h3>
+              <p class="features__description" data-number="— №3 —">Все интересные места <br class="d-tablet-only">находятся очень близко</p>
             </div>
           </li>
           <li class="features__item features__item--equal-height">
             <div class="features__info features__info--with-separator">
-              <h3 class="features__title">Красивая дорога</h3>
-              <p class="features__description" data-number="— №4 —">Ехать в Седону из <br class="d-tablet">Лас-Вегаса <br class="d-mobile">совсем <br class="d-tablet">не скучно!</p>
+              <h3 class="features__title">Красивая <br class="d-desktop">дорога</h3>
+              <p class="features__description" data-number="— №4 —">Ехать в Седону из <br class="d-tablet-only">Лас-Вегаса <br class="d-mobile">совсем <br class="d-tablet">не скучно!</p>
             </div>
           </li>
           <li class="features__item features__item--equal-height">
@@ -124,7 +125,7 @@
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1672187.2519503217!2d-112.7289770295238!3d35.056970950747115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1585588487386!5m2!1sru!2sru" width="320" height="350"></iframe>
       </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer">
       <a class="footer__hashtag" href="#">#VisitSedona</a>
       <ul class="social footer__social">
         <li><a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Twitter</span></a></li>
@@ -136,5 +137,6 @@
         <a class="footer__academy-link" href="https://htmlacademy.ru/intensive/adaptive"><span class="visually-hidden">HTML Academy</span><img src="img/logo-htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
       </p>
     </footer>
+  </div>
   </body>
 </html>
