@@ -2,6 +2,16 @@
 
 // }
 
+.features__intro {
+  margin-bottom: 5px;
+}
+
+@media (min-width: $tablet) {
+  .features__intro {
+    margin-bottom: 0;
+  }
+}
+
 .features__list {
   margin: 0;
   padding: 0;
@@ -47,7 +57,10 @@
 }
 
 .features__info {
-  padding: 30px 36px;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
 
   text-align: center;
   text-transform: uppercase;
@@ -56,13 +69,14 @@
   background-color: #eeeeee;
 
   &--special {
-    padding: 45px 27px 30px;
+    padding-top: 38px;
+    padding-bottom: 40px;
     color: $secondary;
     background-color: $primary;
   }
 
   &--decorative {
-    padding-top: 70px;
+    padding-top: 77px;
 
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -90,6 +104,14 @@
 @media (min-width: $tablet) {
   .features__info {
     width: 256px;
+    padding-top: 45px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 45px;
+
+    &--special {
+      padding-top: 44px;
+    }
 
     &--decorative {
       background-image: none;
@@ -106,12 +128,20 @@
 @media (min-width: $desktop) {
   .features__info {
     width: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 66px;
+
+    &--special {
+      padding-top: 53px;
+      padding-bottom: 40px;
+    }
   }
 }
 
 .features__title {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 45px;
 
   font-weight: bold;
   font-size: 18px;
@@ -120,13 +150,15 @@
 
 @media (min-width: $tablet) {
   .features__title {
+    margin-bottom: 52px;
+
     font-size: 21px;
   }
 }
 
 .features__description {
   position: relative;
-  margin-bottom: 0;
+  margin: 0;
 
   font-size: 14px;
   line-height: 21px;
@@ -135,14 +167,36 @@
     content: attr(data-number);
     position: absolute;
     left: 50%;
-    top: -30px;
+    top: -37px;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: $tablet) {
+  .features__description {
+    &::before {
+      top: -43px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .features__img {
+    width: 512px;
+    height: 256px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__img {
+    width: 800px;
   }
 }
 
 .features__sublist {
   margin: 0;
-  padding: 40px;
+  padding-top: 35px;
+  padding-right: 35px;
   padding-bottom: 10px;
   padding-left: 70px;
 
@@ -155,8 +209,16 @@
   .features__sublist {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 0;
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 3px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__sublist {
+    padding-bottom: 24px;
   }
 }
 
@@ -166,7 +228,10 @@
     flex-direction: column;
     align-items: center;
     width: 256px;
-    padding: 160px 40px 60px;
+    padding-top: 158px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 30px;
 
     text-align: center;
 
@@ -179,13 +244,15 @@
 @media (min-width: $desktop) {
   .features__subitem {
     width: 400px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 }
 
 .features__subtitle {
   position: relative;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
 
   font-weight: bold;
   font-size: 18px;
@@ -194,14 +261,14 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 0;
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   &--housing {
     &::before {
-      left: -47px;
+      left: -48px;
+      bottom: -1px;
       width: 37px;
       height: 36px;
 
@@ -212,6 +279,7 @@
   &--souvenirs {
     &::before {
       left: -45px;
+      bottom: -1px;
       width: 32px;
       height: 38px;
 
@@ -221,7 +289,8 @@
 
   &--food {
     &::before {
-      left: -50px;
+      left: -51px;
+      bottom: -4px;
       width: 38px;
       height: 35px;
 
@@ -232,10 +301,11 @@
 
 @media (min-width: $tablet) {
   .features__subtitle {
+    margin-bottom: 21px;
     font-size: 21px;
 
     &::before {
-      bottom: 60px;
+      bottom: 54px;
       left: 50%;
     }
 
@@ -267,7 +337,7 @@
 
 .features__subdescription {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
 
   font-size: 14px;
   line-height: 21px;

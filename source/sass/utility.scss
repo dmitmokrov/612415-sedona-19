@@ -19,6 +19,7 @@ input[type="radio"].visually-hidden {
 .container {
   margin: 0 auto;
   width: 320px;
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: $tablet) {
@@ -30,5 +31,45 @@ input[type="radio"].visually-hidden {
 @media (min-width: $desktop) {
   .container {
     width: $desktop;
+  }
+}
+
+.d-mobile {
+  display: inline;
+}
+
+@media (min-width: $tablet) {
+  .d-mobile {
+    display: none;
+  }
+}
+
+.d-tablet-only {
+  display: none;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop - 1) {
+  .d-tablet-only {
+    display: inline;
+  }
+}
+
+.d-tablet {
+  display: none;
+}
+
+@media (min-width: $tablet) {
+  .d-tablet {
+    display: inline;
+  }
+}
+
+.d-desktop {
+  display: none;
+}
+
+@media (min-width: $desktop) {
+  .d-desktop {
+    display: inline;
   }
 }

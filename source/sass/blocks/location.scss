@@ -1,6 +1,8 @@
-// .location {
-
-// }
+@media (min-width: $tablet) {
+  .location {
+    height: 350px;
+  }
+}
 
 .location__map {
   border: none;

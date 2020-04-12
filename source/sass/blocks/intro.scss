@@ -1,5 +1,7 @@
 .intro {
-  padding: 40px 0 10px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   line-height: 26px;
   text-align: center;
@@ -8,24 +10,50 @@
   color: $main;
   background-color: $secondary;
 
-  &--big {
-    padding: 30px 0 50px;
+  &--presentation {
+    padding-top: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 44px;
   }
 }
 
 @media (min-width: $tablet) {
   .intro {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-bottom: 50px;
+
+    &--presentation {
+      padding-top: 67px;
+      padding-left: 60px;
+      padding-right: 60px;
+      padding-bottom: 41px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro {
+    padding-left: 355px;
+    padding-right: 355px;
+
+    &--presentation {
+      padding-top: 71px;
+      padding-left: 200px;
+      padding-right: 200px;
+      padding-bottom: 84px;
+    }
   }
 }
 
 .intro__title {
+  display: block;
+  margin: 0;
+
   font-weight: bold;
   font-size: 18px;
-
-  &--big {
-    font-size: 21px;
-  }
 }
 
 @media (min-width: $tablet) {
@@ -33,15 +61,33 @@
     font-size: 21px;
 
     &--big {
+      margin-bottom: 30px;
       font-size: 30px;
     }
   }
 }
 
 .intro__text {
+  margin-top: 27px;
   margin-bottom: 0;
 
   font-size: 14px;
+
+  &--presentation {
+    margin-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .intro__text {
+    &--presentation {
+      margin-bottom: 73px;
+    }
+  }
 }
 
 .intro__button {
