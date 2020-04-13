@@ -1,19 +1,50 @@
 .form {
-  padding: 0 20px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 41px;
 
   background-color: $secondary;
 }
 
 @media (min-width: $tablet) {
   .form {
-    padding: 0 60px;
+    padding-top: 0;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 61px;
   }
 }
 
 @media (min-width: $desktop) {
   .form {
-    padding: 0 120px;
+    padding-top: 0;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 65px;
   }
+}
+
+.form__intro {
+  padding-top: 38px;
+}
+
+@media (min-width: $tablet) {
+  .form__intro {
+    margin-bottom: 25px;
+    padding-top: 74px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .form__intro {
+    margin-bottom: 9px;
+    padding-top: 113px;
+  }
+}
+
+.form__intro-text {
+  line-height: 24px;
 }
 
 .form__fieldset-wrapper {
@@ -50,9 +81,14 @@
     color: $minor;
   }
 
+  &--with-indent {
+    padding-left: 21px;
+    margin-bottom: 7px;
+  }
+
   &--radio {
     position: relative;
-    padding-left: 72px;
+    padding-left: 78px;
 
     font-weight: bold;
     font-size: 18px;
@@ -60,19 +96,19 @@
     &::before {
       content: "";
       position: absolute;
-      top: -10px;
-      left: 0;
+      top: -8px;
+      left: 5px;
       width: 46px;
       height: 46px;
       border-radius: 50%;
       background-color: $input-bg;
-      border: 15px solid $input-bg;
+      border: 13px solid $input-bg;
     }
   }
 
   &--checkbox {
     position: relative;
-    padding-left: 72px;
+    padding-left: 78px;
 
     font-weight: bold;
     font-size: 18px;
@@ -80,8 +116,8 @@
     &::before {
       content: "";
       position: absolute;
-      top: -10px;
-      left: 0;
+      top: -8px;
+      left: 5px;
       width: 46px;
       height: 46px;
       background-color: $input-bg;
@@ -89,9 +125,42 @@
   }
 
   &--textarea {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 14px;
+
     font-weight: bold;
     font-size: 18px;
     text-transform: uppercase;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 320px;
+      height: 1px;
+      background-color: #eeeeee;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .form__label {
+    &--textarea {
+      font-size: 21px;
+      margin-bottom: 54px;
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &--radio {
+      padding-left: 75px;
+    }
   }
 }
 
@@ -99,6 +168,18 @@
   .form__label {
     &--text {
       margin-right: 16px;
+      white-space: nowrap;
+    }
+
+    &--with-indent {
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+
+    &--checkbox {
+      &::before {
+        left: 0;
+      }
     }
   }
 }
@@ -171,17 +252,53 @@
 }
 
 .form__wrapper {
+  margin: 0;
+  margin-top: 17px;
+
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
 }
 
+@media (min-width: $tablet) {
+  .form__wrapper {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 12px;
+      width: 124px;
+      height: 1px;
+      background-color: #eeeeee;
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .form__wrapper {
+    &::before,
+    &::after {
+      width: 280px;
+    }
+  }
+}
+
 .form__textarea {
   display: block;
   width: 100%;
   height: 160px;
-  padding: 20px;
+  padding: 18px 20px;
   border: none;
 
   font: inherit;
@@ -190,11 +307,24 @@
   resize: none;
 }
 
+.form__button-wrapper {
+  margin: 0;
+  margin-top: 55px;
+}
+
 @media (min-width: $tablet) {
   .form__button-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .form__button {
+    width: 50%;
+    max-width: initial;
   }
 }
 

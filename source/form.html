@@ -39,60 +39,64 @@
         <h1 class="visually-hidden">Sedona</h1>
         <section class="contact-us">
           <h2 class="visually-hidden">Напишите нам</h2>
-          <div class="intro">
+          <div class="intro form__intro">
             <b class="intro__title intro__title--big">Оставьте свой отзыв</b>
-            <p class="intro__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных Вами достопримечательностях</p>
+            <p class="intro__text form__intro-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, <br class="d-tablet">а также о посещенных Вами достопримечательностях</p>
           </div>
           <form class="form" action="https://echo.htmlacademy.ru">
             <div class="form__fieldset-wrapper">
-              <fieldset class="fieldset form__tablet-order-2">
-                <legend class="fieldset__legend">Представьтесь:</legend>
-                <p class="fieldset__row">
-                  <label class="form__label form__label--text fieldset__label" for="user-name">Имя*:</label>
-                  <input class="form__input fieldset__input" id="user-name" type="text" placeholder="Петр" required>
-                </p>
-                <p class="fieldset__row">
-                  <label class="form__label form__label--text fieldset__label" for="user-surname">Фамилия*:</label>
-                  <input class="form__input fieldset__input" id="user-surname" type="text" placeholder="Иванов" required>
-                </p>
-                <p class="fieldset__row">
-                  <label class="form__label form__label--text fieldset__label" for="user-patronymic">Отчество:</label>
-                  <input class="form__input fieldset__input" id="user-patronymic" type="text" placeholder="Александрович">
-                </p>
+              <fieldset class="fieldset fieldset--user form__tablet-order-2">
+                <legend class="fieldset__legend fieldset__legend--left">Представьтесь:</legend>
+                <div>
+                  <p class="fieldset__row">
+                    <label class="form__label form__label--text fieldset__label" for="user-name">Имя*:</label>
+                    <input class="form__input fieldset__input" id="user-name" type="text" placeholder="Петр" required>
+                  </p>
+                  <p class="fieldset__row">
+                    <label class="form__label form__label--text fieldset__label" for="user-surname">Фамилия*:</label>
+                    <input class="form__input fieldset__input" id="user-surname" type="text" placeholder="Иванов" required>
+                  </p>
+                  <p class="fieldset__row">
+                    <label class="form__label form__label--text fieldset__label" for="user-patronymic">Отчество:</label>
+                    <input class="form__input fieldset__input" id="user-patronymic" type="text" placeholder="Александрович">
+                  </p>
+                </div>
               </fieldset>
 
-              <fieldset class="fieldset fieldset--full-width form__tablet-order-3">
+              <fieldset class="fieldset fieldset--contact fieldset--full-width form__tablet-order-3">
                 <legend class="fieldset__legend">Контактная информация:</legend>
                 <div class="fieldset__contacts-wrapper">
                   <p class="fieldset__row fieldset__row--contact">
-                    <label class="form__label form__label--text" for="user-tel"><span class="form__hidden-desktop">Контактный </span>телефон*:</label>
+                    <label class="form__label form__label--text form__label--with-indent" for="user-tel"><span class="form__hidden-desktop">Контактный </span>телефон*:</label>
                     <input class="form__input form__input--icon form__input--tel" id="user-tel" type="tel" placeholder="Введите телефон" required>
                   </p>
                   <p class="fieldset__row fieldset__row--contact">
-                    <label class="form__label form__label--text" for="user-email">Электронная почта*:</label>
+                    <label class="form__label form__label--text form__label--with-indent" for="user-email">Электронная почта*:</label>
                     <input class="form__input form__input--icon form__input--email" id="user-email" type="email" placeholder="Введите e-mail" required>
                   </p>
                 </div>
               </fieldset>
 
-              <fieldset class="fieldset form__tablet-order-1">
-                <legend class="fieldset__legend">Ваше общее впечатление:</legend>
-                <p class="fieldset__row">
-                  <input class="form__radio visually-hidden" id="feeling-positive" type="radio" name="feeling" value="positive" checked>
-                  <label class="form__label form__label--radio" for="feeling-positive">Скорее положительное</label>
-                </p>
-                <p class="fieldset__row">
-                  <input class="form__radio visually-hidden" id="feeling-negative" type="radio" name="feeling" value="negative">
-                  <label class="form__label form__label--radio" for="feeling-negative">Скорее отрицательное</label>
-                </p>
-                <p class="fieldset__row">
-                  <input class="form__radio visually-hidden" id="feeling-difficult-to-answer" type="radio" name="feeling" value="difficult-to-answer">
-                  <label class="form__label form__label--radio" for="feeling-difficult-to-answer">Затрудняюсь ответить</label>
-                </p>
+              <fieldset class="fieldset fieldset--emotions form__tablet-order-1">
+                <legend class="fieldset__legend fieldset__legend--emotions fieldset__legend--left">Ваше общее впечатление:</legend>
+                <div>
+                  <p class="fieldset__row fieldset__row--radio">
+                    <input class="form__radio visually-hidden" id="feeling-positive" type="radio" name="feeling" value="positive" checked>
+                    <label class="form__label form__label--radio" for="feeling-positive">Скорее положительное</label>
+                  </p>
+                  <p class="fieldset__row fieldset__row--radio">
+                    <input class="form__radio visually-hidden" id="feeling-negative" type="radio" name="feeling" value="negative">
+                    <label class="form__label form__label--radio" for="feeling-negative">Скорее отрицательное</label>
+                  </p>
+                  <p class="fieldset__row fieldset__row--radio">
+                    <input class="form__radio visually-hidden" id="feeling-difficult-to-answer" type="radio" name="feeling" value="difficult-to-answer">
+                    <label class="form__label form__label--radio" for="feeling-difficult-to-answer">Затрудняюсь ответить</label>
+                  </p>
+                </div>
               </fieldset>
 
-              <fieldset class="fieldset fieldset--full-width form__tablet-order-4">
-                <legend class="fieldset__legend">Посещенные достопримечательности:</legend>
+              <fieldset class="fieldset fieldset--sights fieldset--full-width form__tablet-order-4">
+                <legend class="fieldset__legend">Посещенные <br class="d-tablet">достопримечательности:</legend>
                 <div class="fieldset__sights-wrapper">
                   <p class="fieldset__row fieldset__row--sights">
                     <input class="form__checkbox visually-hidden" id="devil's-bridge" type="checkbox" name="devil's bridge" checked>
@@ -100,7 +104,7 @@
                   </p>
                   <p class="fieldset__row fieldset__row--sights">
                     <input class="form__checkbox visually-hidden" id="bell-mountain" type="checkbox" name="bell mountain" checked>
-                    <label class="form__label form__label--checkbox" for="bell-mountain">Гора-колокол</label>
+                    <label class="form__label form__label--checkbox" for="bell-mountain">Гора-Колокол</label>
                   </p>
                   <p class="fieldset__row fieldset__row--sights">
                     <input class="form__checkbox visually-hidden" id="slide-park" type="checkbox" name="slide park" checked>
@@ -120,7 +124,7 @@
             </p>
 
             <p class="form__button-wrapper">
-              <button class="button" type="submit">Отправить отзыв</button>
+              <button class="button form__button" type="submit">Отправить отзыв</button>
               <span class="form__required">* — обязательные поля</span>
             </p>
           </form>
