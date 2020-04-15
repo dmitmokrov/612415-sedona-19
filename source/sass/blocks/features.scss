@@ -180,27 +180,30 @@
   }
 }
 
-.features__img-wrapper {
-  position: relative;
-  width: 320px;
-  height: 260px;
-  overflow: hidden;
-}
-
 @media (min-width: $tablet) {
   .features__img-wrapper {
     flex-grow: 1;
-    height: auto;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__img-wrapper {
+    position: relative;
     min-height: 256px;
+    overflow: hidden;
   }
 }
 
 .features__img {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: auto;
+  display: block;
+}
+
+@media (min-width: $desktop) {
+  .features__img {
+    position: absolute;
+    top: -70px;
+    left: 0;
+  }
 }
 
 .features__sublist {
