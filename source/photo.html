@@ -14,7 +14,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="logo__img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип City of Sedona">
+            <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип City of Sedona">
           </picture>
         </a>
         <nav class="main-nav">
@@ -46,7 +46,11 @@
             <li class="photo-video__item photo-video__item--full-width">
               <figure class="photo">
                 <a class="photo__link" href="#">
-                  <img class="photo__img photo__img--full-width" src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Шоссе в солнечном свете">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                    <img class="photo__img photo__img--full-width" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Шоссе в солнечном свете">
+                  </picture>
                 </a>
                 <div class="photo__wrapper">
                   <div class="photo__info">
@@ -63,7 +67,11 @@
             <li class="photo-video__item">
               <figure class="photo">
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местные кактусы">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                    <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Местные кактусы">
+                  </picture>
                 </a>
                 <div class="photo__wrapper">
                   <div class="photo__info">
@@ -80,7 +88,11 @@
             <li class="photo-video__item">
               <figure class="photo">
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Серпантины в Седоне">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                    <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Серпантины в Седоне">
+                  </picture>
                 </a>
                 <div class="photo__wrapper photo__wrapper--darker-bg">
                   <div class="photo__info">
@@ -97,7 +109,11 @@
             <li class="photo-video__item">
               <figure class="photo">
                 <a class="photo__link" href="#">
-                  <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост Дьявола в Седоне">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                    <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост Дьявола в Седоне">
+                  </picture>
                 </a>
                 <div class="photo__wrapper">
                   <div class="photo__info">
