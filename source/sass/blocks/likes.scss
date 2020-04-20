@@ -1,19 +1,29 @@
 .likes {
+  position: relative;
   margin: 0;
   padding-left: 37px;
 
   font-weight: bold;
   font-size: 14px;
   line-height: 24px;
-
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
-  background-position: left top -2px;
-  background-size: 23px 21px;
 }
 
 @media (min-width: $tablet) {
   .likes {
     padding-left: 33px;
+  }
+}
+
+.likes__icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  color: #b3b3b3;
+}
+
+@media (min-width: $desktop) {
+  .likes__icon {
+    color: $secondary;
   }
 }

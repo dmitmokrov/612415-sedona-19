@@ -74,4 +74,14 @@
   width: 27px;
   height: 34px;
   margin-left: 10px;
+  color: $main;
+
+  &:hover {
+    color: $primary;
+  }
+
+  &:active {
+    color: $main;
+    opacity: 0.3;
+  }
 }
