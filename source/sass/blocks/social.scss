@@ -9,7 +9,9 @@
 }
 
 .social__link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
 
@@ -17,15 +19,15 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  &--twitter {
-    background-image: url("../img/icon-twitter.svg");
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &--facebook {
-    background-image: url("../img/icon-facebook.svg");
-  }
+  &:active {
+    background-color: #5496bd;
 
-  &--youtube {
-    background-image: url("../img/icon-youtube.svg");
+    svg {
+      opacity: 0.3;
+    }
   }
 }
