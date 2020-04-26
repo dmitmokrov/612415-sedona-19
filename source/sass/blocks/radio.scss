@@ -1,0 +1,48 @@
+// .radio {
+
+// }
+
+.radio__item {
+  &:not(:last-child) {
+    margin-bottom: 11px;
+  }
+}
+
+.radio__label {
+  display: flex;
+  align-items: center;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+
+  &::before {
+    content: "";
+    flex-shrink: 0;
+    width: 58px;
+    height: 58px;
+    margin-right: 21px;
+
+    background-color: $input-bg;
+    border: 18px solid $input-bg;
+    border-radius: 50%;
+  }
+}
+
+.radio__input:checked + .radio__label::before {
+  background-color: $minor;
+}
+
+@media (min-width: $tablet) {
+  .radio__label {
+    &::before {
+      margin-right: 18px;
+    }
+  }
+
+  .radio__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
