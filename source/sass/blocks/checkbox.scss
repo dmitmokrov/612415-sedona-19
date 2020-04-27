@@ -28,10 +28,31 @@
     background-size: 24px 16px;
     background-position: center;
   }
+
+  &:hover {
+    &::before {
+      background-color: #e5e5e5;
+    }
+  }
+
+  &:active {
+    &::before {
+      background-color: #d5d5d5;
+    }
+  }
 }
 
-.checkbox__input:checked + .checkbox__label::before {
-  background-image: url("../img/icon-tick.svg");
+.checkbox__input:checked + .checkbox__label {
+  &::before {
+    background-image: url("../img/icon-tick.svg");
+  }
+
+  &:active {
+    &::before {
+      background-color: #747474;
+      opacity: 0.3;
+    }
+  }
 }
 
 @media (min-width: $tablet) {
