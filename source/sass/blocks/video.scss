@@ -139,10 +139,18 @@
   height: 20px;
   padding: 0;
   border: none;
-  color: #454545;
+  color: #5c6870;
   background-color: transparent;
   background-repeat: no-repeat;
   cursor: pointer;
+
+  &:hover {
+    color: $minor;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   &--replay {
     width: 16px;
@@ -170,6 +178,16 @@
 @media (min-width: $tablet) {
   .video__button {
     color: $secondary;
+
+    &:hover {
+      color: $secondary;
+      opacity: 0.6;
+    }
+
+    &:active {
+      color: $secondary;
+      opacity: 0.3;
+    }
 
     &--left {
       margin-left: 35px;

@@ -1,6 +1,7 @@
 "use strict";
 
 var gulp = require("gulp");
+var htmlmin = require('gulp-htmlmin');
 var plumber = require("gulp-plumber");
 var sourcemap = require("gulp-sourcemaps");
 var sass = require("gulp-sass");
@@ -8,6 +9,7 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var uglify = require("gulp-uglify");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -16,6 +18,7 @@ var del = require("del");
 
 gulp.task("html", function () {
   return gulp.src("source/*.html")
+    .pipe(htmlmin())
     .pipe(gulp.dest("build"));
 });
 
@@ -35,8 +38,15 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("js", function () {
+  return gulp.src("source/js/main.js")
+    .pipe(uglify())
+    .pipe(rename("main.min.js"))
+    .pipe(gulp.dest("source/js"));
+});
+
 gulp.task("img", function () {
-  return gulp.src("source/img/**/*.{jpg, png, svg}")
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
       imagemin.optipng({
         optimizationLevel: 3
@@ -50,7 +60,7 @@ gulp.task("img", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("source/img/**/*.{jpg, png}")
+  return gulp.src("source/img/**/*.{jpg,png}")
     .pipe(webp({
       quality: 90
     }))
@@ -68,10 +78,9 @@ gulp.task("svgstore", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff2, woff}",
+    "source/fonts/**/*.{woff2,woff}",
     "source/img/**",
     "source/js/**",
-    "source/css/normalize.css",
     "source/*.ico"
   ], {
     base: "source"
