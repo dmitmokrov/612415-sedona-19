@@ -18,6 +18,7 @@
 
   &::before {
     content: "";
+    display: inline-block;
     flex-shrink: 0;
     width: 58px;
     height: 58px;
