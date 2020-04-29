@@ -346,12 +346,6 @@
     }
   }
 
-  .form__input {
-    &--icon {
-      max-width: 315px;
-    }
-  }
-
   .form__contacts-wrapper {
     display: flex;
   }
@@ -364,6 +358,7 @@
 
       &:not(:last-child) {
         margin-bottom: 0;
+        padding-right: 79px;
       }
     }
 
