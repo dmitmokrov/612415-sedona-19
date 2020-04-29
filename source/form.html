@@ -18,7 +18,7 @@
             <img class="logo__img" src="img/logo-sedona-mobile.svg" alt="Логотип City of Sedona">
           </picture>
         </a>
-        <nav class="main-nav">
+        <nav class="main-nav no-js">
           <button class="main-nav__toggle main-nav__toggle--right" type="button"><span class="visually-hidden">Меню</span></button>
           <ul class="main-nav__list">
             <li>
@@ -49,11 +49,11 @@
               <legend class="form__legend">Представьтесь:</legend>
               <p class="form__input-wrapper">
                 <label class="form__label" for="name">Имя*:</label>
-                <input class="form__input" id="name" type="text" placeholder="Петр">
+                <input class="form__input" id="name" type="text" placeholder="Петр" required>
               </p>
               <p class="form__input-wrapper">
                 <label class="form__label" for="last-name">Фамилия*:</label>
-                <input class="form__input" id="last-name" type="text" placeholder="Иванов">
+                <input class="form__input" id="last-name" type="text" placeholder="Иванов" required>
               </p>
               <p class="form__input-wrapper">
                 <label class="form__label" for="patronymic">Отчество:</label>
@@ -65,11 +65,11 @@
               <div class="form__contacts-wrapper">
                 <p class="form__input-wrapper form__input-wrapper--contact">
                   <label class="form__label form__label--contact" for="phone-number"><span class="form__label--desktop-none">Контактный </span>телефон*:</label>
-                  <input class="form__input form__input--icon form__input--phone" id="phone-number" type="tel" placeholder="Введите телефон">
+                  <input class="form__input form__input--icon form__input--phone" id="phone-number" type="tel" placeholder="Введите телефон" required>
                 </p>
                 <p class="form__input-wrapper form__input-wrapper--contact form__input-wrapper--email">
                   <label class="form__label form__label--contact" for="email">Электронная почта*:</label>
-                  <input class="form__input form__input--icon form__input--email" id="email" type="email" placeholder="Введите e-mail">
+                  <input class="form__input form__input--icon form__input--email" id="email" type="email" placeholder="Введите e-mail" required>
                 </p>
               </div>
             </fieldset>
