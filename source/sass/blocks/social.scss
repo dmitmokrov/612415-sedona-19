@@ -1,11 +1,22 @@
 .social {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  // justify-content: space-between;
   width: 150px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+}
+
+.social__item {
+  &:not(:nth-child(3n+1)) {
+    margin-left: 6px;
+  }
+
+  &:nth-child(n+4) {
+    margin-top: 6px;
+  }
 }
 
 .social__link {
