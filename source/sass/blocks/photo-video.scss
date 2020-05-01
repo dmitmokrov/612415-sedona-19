@@ -4,18 +4,24 @@
 
 .photo-video__intro {
   padding-top: 38px;
+  padding-left: 21px;
+  padding-right: 21px;
 }
 
 @media (min-width: $tablet) {
   .photo-video__intro {
     margin-bottom: 20px;
     padding-top: 74px;
+    padding-left: 165px;
+    padding-right: 165px;
   }
 }
 
 @media (min-width: $desktop) {
   .photo-video__intro {
     padding-top: 113px;
+    padding-left: 380px;
+    padding-right: 380px;
   }
 }
 

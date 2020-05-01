@@ -14,7 +14,6 @@
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.15);
   transform: translate(-50%, -50%);
-  outline: 1px solid teal;
 
   &--special {
     padding-bottom: 0;
@@ -24,8 +23,7 @@
 .popup__title {
   margin: 0;
   margin-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0 50px;
 
   font-weight: bold;
   font-size: 18px;
@@ -35,8 +33,7 @@
 .popup__text {
   margin: 0;
   margin-bottom: 30px;
-  padding-left: 50px;
-  padding-right: 30px;
+  padding: 0 50px;
 
   font-size: 14px;
   line-height: 24px;
@@ -66,10 +63,15 @@
     &--special {
       width: 640px;
       padding-bottom: 0;
+
+      .popup__text {
+        padding: 0 110px;
+      }
     }
   }
 
   .popup__title {
+    padding: 0 75px;
     font-size: 30px;
     line-height: 40px;
   }

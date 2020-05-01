@@ -36,8 +36,8 @@
 
 @media (min-width: $desktop) {
   .intro {
-    padding-left: 355px;
-    padding-right: 355px;
+    padding-left: 350px;
+    padding-right: 350px;
 
     &--presentation {
       padding-top: 71px;
@@ -54,6 +54,10 @@
 
   font-weight: bold;
   font-size: 18px;
+
+  &--index {
+    padding: 0 10px;
+  }
 }
 
 @media (min-width: $tablet) {
@@ -75,8 +79,7 @@
 
   &--presentation {
     margin-bottom: 33px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 0 20px;
 
     line-height: 24px;
   }
@@ -86,6 +89,15 @@
   .intro__text {
     &--presentation {
       margin-bottom: 73px;
+      padding: 0 100px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .intro__text {
+    &--presentation {
+      padding: 0 175px;
     }
   }
 }

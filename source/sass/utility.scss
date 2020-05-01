@@ -74,3 +74,9 @@ input[type="radio"].visually-hidden {
     display: inline;
   }
 }
+
+@media (min-width: $desktop) {
+  .d-desktop-none {
+    display: none;
+  }
+}

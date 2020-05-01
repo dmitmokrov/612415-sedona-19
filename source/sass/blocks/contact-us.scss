@@ -8,14 +8,18 @@
 
 @media (min-width: $tablet) {
   .contact-us__intro {
-    padding-top: 75px;
     margin-bottom: 24px;
+    padding-top: 75px;
+    padding-left: 160px;
+    padding-right: 160px;
   }
 }
 
 @media (min-width: $desktop) {
   .contact-us__intro {
-    padding-top: 113px;
     margin-bottom: 9px;
+    padding-top: 113px;
+    padding-left: 375px;
+    padding-right: 375px;
   }
 }

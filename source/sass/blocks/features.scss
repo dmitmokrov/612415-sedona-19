@@ -59,8 +59,8 @@
 
 .features__info {
   padding-top: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 28px;
 
   text-align: center;
@@ -71,6 +71,8 @@
 
   &--special {
     padding-top: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 40px;
     color: $secondary;
     background-color: $primary;
@@ -112,6 +114,8 @@
 
     &--special {
       padding-top: 44px;
+      padding-left: 43px;
+      padding-right: 43px;
     }
 
     &--decorative {
@@ -136,6 +140,8 @@
     &--special {
       padding-top: 53px;
       padding-bottom: 40px;
+      padding-left: 55px;
+      padding-right: 55px;
     }
   }
 }
@@ -152,8 +158,15 @@
 @media (min-width: $tablet) {
   .features__title {
     margin-bottom: 52px;
+    padding: 0 10px;
 
     font-size: 21px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .features__title {
+    padding: 0 70px;
   }
 }
 
@@ -244,8 +257,8 @@
     align-items: center;
     width: 256px;
     padding-top: 158px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 44px;
+    padding-right: 44px;
     padding-bottom: 30px;
 
     text-align: center;
